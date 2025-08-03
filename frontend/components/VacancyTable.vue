@@ -23,7 +23,7 @@
 
     <template #item.description="{ item }">
       <span class="truncate-text" :title="item.description || ''">
-        {{ item.description || '—' }}
+        {{ item.description || '' }}
       </span>
     </template>
   </v-data-table-server>

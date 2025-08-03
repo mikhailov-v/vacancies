@@ -6,7 +6,7 @@ export const useVacancies = () => {
     const baseUrl = process.server ? config.apiBaseUrl : config.public.apiBaseUrl
 
     const formatSalary = (salary: number | null): string => {
-        return salary ? salary.toLocaleString('ru-RU') : '—'
+        return salary ? salary.toLocaleString('ru-RU') : ''
     }
 
     const formatDate = (dateStr: string | null): string => {
