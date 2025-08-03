@@ -26,7 +26,8 @@ services:
       - "${FRONTEND_PORT:-3000}:3000"
     volumes:
       - ./frontend:/app
-    command: yarn dev
+      - /app/node_modules
+    command: sh -c "yarn install && yarn dev"
     networks:
       - appnet
 

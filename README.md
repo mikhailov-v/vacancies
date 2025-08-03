@@ -39,10 +39,5 @@ docker compose exec php composer install
 docker compose exec php php yii migrate --interactive=0
 ```
 
-### 5. Установить зависимости Nuxt
-```bash
-docker compose run --rm nuxt yarn install
-```
-
-### 6. Открыть проект
+### 5. Открыть проект
 [http://localhost:3000](http://localhost:3000)
