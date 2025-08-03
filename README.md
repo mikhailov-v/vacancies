@@ -21,7 +21,7 @@ Backend — **Yii2 REST API**.
 
 ### 1. Клонировать репозиторий
 ```bash
-git https://github.com/mikhailov-v/vacancies
+git clone git@github.com:mikhailov-v/vacancies.git vacancies
 cd vacancies
 ```
 
@@ -30,10 +30,20 @@ cd vacancies
 docker compose up -d --build
 ```
 
-### 3. Выполнить первичную настройку БД
+### 3. Установить зависимости Yii2
+```bash
+docker compose exec php composer install
+```
+
+### 4. Выполнить первичную настройку БД
 ```bash
 docker compose exec php php yii migrate --interactive=0
 ```
 
-### 4. Открыть проект
+### 5. Установить зависимости Nuxt
+```bash
+docker compose run --rm nuxt yarn install
+```
+
+### 6. Открыть проект
 [http://localhost:3000](http://localhost:3000)
