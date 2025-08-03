@@ -21,8 +21,7 @@ Backend — **Yii2 REST API**.
 
 ### 1. Клонировать репозиторий
 ```bash
-git clone git@github.com:mikhailov-v/vacancies.git vacancies
-cd vacancies
+git clone git@github.com:mikhailov-v/vacancies.git vacancies && cd vacancies
 ```
 
 ### 2. Запустить проект в Docker
